@@ -1,4 +1,4 @@
-# Build and Deploy a React movies website usin Tmdb api, material UI, and context api.
+# Build and Deploy a React movies website using Tmdb api, material UI, and context api.
 
 Build and Deploy a Movie Website with React 18! 
 
