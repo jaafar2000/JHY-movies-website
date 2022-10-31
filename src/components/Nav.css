@@ -1,0 +1,82 @@
+.nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 900;
+  height: 70px;
+  padding: 20px 0;
+  transition-timing-function: ease-in;
+  transition: all 0.2s ;
+}
+.navLogo{
+  width: 80px;
+  position: fixed;
+  left: 20px;
+  color: #fff;
+  
+}
+.navLogo .logo{
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+.Login__register{
+  width: fit-content;
+  position: fixed;
+  right: 20px;
+  color: white;
+  padding: 0.3rem 0.5rem;
+  letter-spacing: 1.3px;
+  font-size: 1.2rem;
+  background-color: rgba(17, 17, 17, 0.274);
+  border-radius: 0.2rem;
+}
+
+.nav__black{
+  background-color: #111;
+}
+
+.navbar__links{
+  position: fixed;
+  left: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.navbar__links .link {
+  text-decoration: none;
+  margin-right: 2rem;
+  font-weight: 500;
+}
+
+.white .link {
+  color: white;
+  letter-spacing: 1.4px;
+
+} 
+.link:hover {
+  color: red;
+
+}
+ .active {
+  color:  #e50914 !important;
+  font-weight: 700 !important;
+
+}
+.search  {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and  (max-width:1000px){
+  .Login__register{
+    display: none;
+  }
+  .search span{
+    display: none;
+  }  
+}

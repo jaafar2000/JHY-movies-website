@@ -1,0 +1,12 @@
+.pageInation{
+  width: fit-content;
+  margin: auto;
+  padding: 1rem ;
+}
+.MuiPagination-ul {
+  color: white;
+}
+
+.MuiPagination-ul li button {
+  color: white;
+}

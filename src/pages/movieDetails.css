@@ -1,0 +1,251 @@
+.background {
+  object-fit: contain;
+  position: relative;
+}
+.background .backdrop_img {
+  width: 100%;
+}
+
+.background .overlay {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, black, gray);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.7;
+  z-index: 2;
+}
+
+.movie__info {
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.movie__info .poster {
+  height: 305px;
+}
+.movie__info img {
+  width: 30%;
+  border-radius: 0.5rem;
+  margin-right: 2rem;
+}
+
+.movie__info-text {
+  padding: 1rem;
+  width: 80%;
+}
+
+.movie__info-text .title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+@media screen and (max-width: 700px) {
+  .movie__info {
+    display: flex;
+    flex-direction: column;
+  }
+  .background {
+    height: 100vh;
+  }
+  .movie__info-text  {
+    text-align: center;
+
+  }
+  .movie__info-text .title {
+    margin:1rem auto;
+    width: fit-content;
+    
+  }
+  .release_date_and_genres{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .genres{
+    margin-top: 0.5rem;
+  }
+}
+
+.movie__info-text .release-date {
+  margin-right: 1rem;
+  font-size: 1.3rem;
+}
+.movie__info-text h1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.movie__info-text h1 .vote_average {
+  font-size: 1.5rem;
+  letter-spacing: 0;
+  background-color: #f5c518;
+  color: black;
+  font-weight: bold;
+  display: block;
+  padding: 0.1rem 0.2rem;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+}
+.genres {
+  border: 1px solid #fff;
+  padding: 0.3rem;
+  margin-right: 0.5rem;
+  border-radius: 0.4rem;
+}
+.movie__info-text h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+.movie__info-text .overview {
+  opacity: 0.9;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+}
+
+@media screen and (min-width : 1400px) {
+
+   .movie__info-text .title{
+    font-size: 6rem;
+    font-weight: 500;
+  }
+  .release_date_and_genres .release-date{
+    font-size: 3rem;
+  }
+  .release_date_and_genres .genres{
+    font-size: 2rem;
+  }
+
+  .movie__info-text h3{
+    font-size: 3rem;
+  }
+  .overview{
+    font-size: 1.4rem;
+  }
+}
+
+
+
+
+
+
+
+/* cast */
+
+.cast {
+  padding-top: 1rem;
+  color: #fff;
+}
+.cast .cast_section-title,
+.season-title {
+  font-weight: 100;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+.swiper-wrapper{
+  width: fit-content !important;
+  margin: auto;
+  padding: 0 2rem;
+}
+.slide {
+  width: fit-content;
+  object-fit: contain;
+  height: 360px;
+  transition: 0.3s ease-in-out;
+  margin-left: 0;
+  width: 207px;
+
+}
+
+.slide:hover {
+  transform: scale(1.04);
+  overflow: visible;
+  cursor: pointer;
+}
+.slide .actor_image {
+  width: 170px;
+  border-radius: 0.5rem;
+}
+.slide .actor_name {
+  font-size: 1.2rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin-top: 0.2rem;
+  padding: 0.5rem;
+}
+
+.slide .actor_character {
+  opacity: 0.6;
+  margin-top: 0.3rem;
+  padding: 0.5rem;
+}
+.swiper__actor {
+  width: 207px !important;
+}
+.reactPlayer_container {
+  margin: 2rem auto;
+  background-color: #111;
+}
+.reactPlayer {
+  margin: 0 auto;
+  width: 30px;
+}
+
+.review {
+  padding: 1rem;
+  border-left: 4px solid rgba(255, 0, 0, 0.699);
+  margin: 2rem 2rem 0;
+}
+
+.review h1 {
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 0.3rem;
+}
+.review_section{
+  padding-bottom: 8rem !important;
+}
+.review_section .section-title{
+  margin-left: 2rem;
+  font-weight: 100;
+  font-size: 3rem;
+}
+
+.reaview_not_avilable {
+  padding: 3rem;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.rT {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #e50914 !important;
+}
+
+.displayed-text{
+  opacity: 0.8;
+  font-weight: 100;
+  letter-spacing: 0.2px;
+}
+.read-more-button{
+display: inline-block;
+}
